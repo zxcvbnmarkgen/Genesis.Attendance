@@ -1,0 +1,21 @@
+﻿@page
+@using Genesis.Attendance.Localization
+@using Genesis.Attendance.Web.Pages.Attendance.Course
+@using Microsoft.Extensions.Localization
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal
+@model CreateModalModel
+@inject IStringLocalizer<AttendanceResource> L
+@{
+    Layout = null;
+}
+<form asp-page="/Attendance/Course/CreateModal">
+    <abp-modal>
+        <abp-modal-header title="Create @L["Menu:Course"].Value"></abp-modal-header>
+        <abp-modal-body>
+            <abp-input asp-for="modelDto.Name" />
+            <abp-input asp-for="modelDto.ShortName" />
+            <abp-input asp-for="modelDto.IsActive" />
+        </abp-modal-body>
+        <abp-modal-footer buttons="@(AbpModalButtons.Cancel|AbpModalButtons.Save)"></abp-modal-footer>
+    </abp-modal>
+</form>

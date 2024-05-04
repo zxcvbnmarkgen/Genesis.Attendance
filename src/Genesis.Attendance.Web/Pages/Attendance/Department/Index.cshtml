@@ -1,0 +1,32 @@
+﻿@page
+@using Genesis.Attendance.Localization
+@using Genesis.Attendance.Permissions
+@using Genesis.Attendance.Web.Pages.Attendance.Department
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<AttendanceResource> L
+@inject IAuthorizationService AuthorizationService
+@model IndexModel
+@section scripts
+{
+    <abp-script src="/Pages/Attendance/Department/Index.js" />
+}
+<abp-card>
+    <abp-card-header>
+        <abp-row>
+            <abp-column size-md="_6">
+                <abp-card-title>@L["Menu:Department"]</abp-card-title>
+            </abp-column>
+            <abp-column size-md="_6" class="text-end">
+                @if (await AuthorizationService
+                .IsGrantedAsync(AttendancePermissions.Department.Create))
+                {
+                    <abp-button id="CreateButton" text="@L["Create"].Value" icon="plus" button-type="Primary" class="btn-sm" />
+                }
+            </abp-column>
+        </abp-row>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="DataTable"></abp-table>
+    </abp-card-body>
+</abp-card>

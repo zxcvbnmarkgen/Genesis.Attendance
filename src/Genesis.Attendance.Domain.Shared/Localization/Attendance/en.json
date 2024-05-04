@@ -1,0 +1,57 @@
+{
+  "culture": "en",
+  "texts": {
+    "Menu:Home": "Home",
+    "Welcome": "Welcome",
+    "LongWelcomeMessage": "Welcome to the application. This is a startup project created by DEVGOFY.",
+
+    //Menu
+    "Menu:Department": "Department",
+    "Menu:Course": "Course",
+    "Menu:Teacher": "Teacher",
+    "Menu:Student": "Student",
+    "Menu:Attendance": "Attendance",
+
+    //Permission
+    "Permission:Department": "Department",
+    "Permission:Department.Create": "Create",
+    "Permission:Department.Edit": "Edit",
+    "Permission:Department.Delete": "Delete",
+
+    "Permission:Course": "Course",
+    "Permission:Course.Create": "Create",
+    "Permission:Course.Edit": "Edit",
+    "Permission:Course.Delete": "Delete",
+
+    "Permission:Teacher": "Teacher",
+    "Permission:Teacher.Create": "Create",
+    "Permission:Teacher.Edit": "Edit",
+    "Permission:Teacher.Delete": "Delete",
+
+    "Permission:Student": "Student",
+    "Permission:Student.Create": "Create",
+    "Permission:Student.Edit": "Edit",
+    "Permission:Student.Delete": "Delete",
+
+    "Permission:Attendance": "Attendance",
+    "Permission:Attendance.Create": "Create",
+    "Permission:Attendance.Edit": "Edit",
+    "Permission:Attendance.Delete": "Delete",
+
+
+    //Actions
+    "Actions": "Actions",
+    "Create": "Create",
+    "Edit": "Edit",
+    "Delete": "Delete",
+    "Close": "Close",
+
+    //Alerts
+    "AreYouSure": "Are you sure?",
+    "AreYouSureToDelete": "Are you sure you want to delete this record?",
+    "DeletionConfirmation": "Are you sure to delete the record '{0}'?",
+    "SuccessfullyCreated": "Record was successfully craeted!",
+    "SuccessfullyUpdated": "Record was successfully updated!",
+    "SuccessfullyDeleted": "Record was successfully deleted!"
+  }
+}
